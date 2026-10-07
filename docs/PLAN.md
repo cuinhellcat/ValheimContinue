@@ -7,7 +7,7 @@
 5. [x] Build ohne Warnungen; isolierte Linux-Installation und Charakter-Sicherung.
 6. [x] Echter Linux-Spieltest einschließlich Anmeldung und Spawn; Nutzer bestätigt Erfolg.
 7. [x] Dokumentation, Windows-Anleitung und Release-Paket ohne persönliche Daten erstellen.
-8. [ ] GitHub-Veröffentlichung mit Nutzerfreigabe (am 7. Oktober 2026 erteilt).
+8. [x] GitHub-Veröffentlichung mit Nutzerfreigabe: [Repository](https://github.com/cuinhellcat/ValheimContinue) und [Release 1.0.0](https://github.com/cuinhellcat/ValheimContinue/releases/tag/v1.0.0), 7. Oktober 2026.
 
 ## Nach dem ersten Release
 
