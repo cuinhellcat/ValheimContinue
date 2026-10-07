@@ -33,3 +33,11 @@ Anschließend wurde die Bereinigung so eingeschränkt, dass normale Anmeldungen 
 Der Teststart verwendete ausdrücklich Fenstermodus und 1280×720 sowie einen direkten Prozessstart. Die gesicherten Unity-Voreinstellungen blieben identisch. Eine vermisste Steam-Input-Konfiguration beim direkten Start ist eine plausible Erklärung für abweichende Steuerung, keine bewiesene Diagnose. Der vorgesehene Installationsweg startet deshalb über Steam ohne diese Testparameter.
 
 Downloads, Spielbibliotheken, dekompilierte Ansichten, Logs, Screenshots, persönliche Konfigurationen und Charakter-Sicherungen bleiben ausschließlich lokal und sind von Git ausgeschlossen.
+
+## Einfacher Windows-Installer
+
+`Installieren.cmd` startet ein mit Windows PowerShell 5.1 kompatibles Skript. Es liest Steam-Pfade und Bibliotheksdateien, bietet bei Bedarf eine Auswahl von `valheim.exe` an und laedt den festgelegten Valheim-BepInEx-Pack selbst. Download und enthaltene Mod-DLL werden anhand festgelegter SHA-256-Werte geprueft. Die ZIP-Entpackung verwendet [Expand-Archive](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.archive/expand-archive?view=powershell-5.1). Die Ausfuehrungsoption gilt nur fuer diesen PowerShell-Prozess; die systemweite Richtlinie wird nicht veraendert.
+
+Vor Aenderungen werden eine vorhandene Continue-DLL und ein Dateimanifest lokal gesichert. Bei Schreibfehlern wird der vorherige Zustand wiederhergestellt. Der separate Rueckgaengig-Start erhaelt den gemeinsam verwendeten Loader und ueberschreibt keine seit der Installation veraenderten Dateien. Eine bereits identische Installation fuehrt zu keiner weiteren Aenderung. Bestehende fremde Loader und doppelt installierte Continue-Dateien werden abgewiesen.
+
+Die mitgelieferten Tests laufen in kuenstlichen Verzeichnissen und pruefen elf Szenarien unter PowerShell 7.6.6 auf Linux, einschliesslich abgebrochener Kopiervorgaenge und anschliessender Wiederholung. Sie ersetzen keinen Windows-Test. Registry-Zugriff, Windows PowerShell 5.1, CMD-Doppelklick, Windows-Dialog und eventuell erforderliche Administratorrechte bleiben unbestaetigt. Das Windows-Paket enthaelt die unveraenderte Mod-DLL und keine persoenliche Konfiguration.

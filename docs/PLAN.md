@@ -11,6 +11,9 @@
 
 ## Nach dem ersten Release
 
+- [x] Einfaches Windows-Paket mit automatischer Steam-Suche, BepInEx-Download, Sicherung und Wiederherstellung; Dateitests unter PowerShell bestanden.
+- [ ] Echter Windows-Test des neuen Installers (Registry-Suche, Doppelklick und Dateiauswahl).
+
 - [ ] Windows-Laufzeittest und Test der Passwortbereinigung nach der letzten kleinen Nachkorrektur.
 - [ ] Bessere Controller-Navigation und Prüfung verschiedener Bildschirmgrößen.
 - [ ] Optional zuletzt erfolgreich verwendetes Ziel merken (Passwort weiterhin nur explizit eingegeben).
