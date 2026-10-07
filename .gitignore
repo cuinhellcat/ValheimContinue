@@ -1,0 +1,12 @@
+tools/
+downloads/
+logs/
+backups/
+dist/
+**/bin/
+**/obj/
+inspection/
+*.user
+runtime/
+private/
+*.cfg

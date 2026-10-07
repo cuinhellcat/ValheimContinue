@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <NoStdLib>true</NoStdLib>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <AssemblyName>ValheimContinue</AssemblyName>
+    <Version>1.0.0</Version>
+    <GameDir Condition="'$(GameDir)' == '' and '$(VALHEIM_DIR)' != ''">$(VALHEIM_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == '' and '$(OS)' == 'Windows_NT'">C:/Program Files (x86)/Steam/steamapps/common/Valheim</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">$(HOME)/.local/share/Steam/steamapps/common/Valheim</GameDir>
+    <LoaderDir Condition="'$(LoaderDir)' == ''">../tools/bepinex/BepInExPack_Valheim/BepInEx/core</LoaderDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx"><HintPath>$(LoaderDir)/BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(LoaderDir)/0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="assembly_valheim"><HintPath>$(GameDir)/valheim_Data/Managed/assembly_valheim.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="assembly_utils"><HintPath>$(GameDir)/valheim_Data/Managed/assembly_utils.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="assembly_guiutils"><HintPath>$(GameDir)/valheim_Data/Managed/assembly_guiutils.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="gui_framework"><HintPath>$(GameDir)/valheim_Data/Managed/gui_framework.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="Splatform"><HintPath>$(GameDir)/valheim_Data/Managed/Splatform.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="UnityEngine"><HintPath>$(GameDir)/valheim_Data/Managed/UnityEngine.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="UnityEngine.CoreModule"><HintPath>$(GameDir)/valheim_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="UnityEngine.UI"><HintPath>$(GameDir)/valheim_Data/Managed/UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameDir)/valheim_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameDir)/valheim_Data/Managed/UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(GameDir)/valheim_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="Unity.TextMeshPro"><HintPath>$(GameDir)/valheim_Data/Managed/Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+  <Reference Include="mscorlib"><HintPath>$(GameDir)/valheim_Data/Managed/mscorlib.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="netstandard"><HintPath>$(GameDir)/valheim_Data/Managed/netstandard.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="System"><HintPath>$(GameDir)/valheim_Data/Managed/System.dll</HintPath><Private>false</Private></Reference>
+<Reference Include="System.Core"><HintPath>$(GameDir)/valheim_Data/Managed/System.Core.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>
