@@ -4,17 +4,24 @@ Ein Klick auf **continue** im Hauptmenü wählt deine Figur aus und verbindet di
 
 Die Mod läuft ausschließlich auf dem Client. Der Server braucht sie nicht. Sie verwendet Valheims normale Charakterauswahl, Berechtigungsprüfung und Anmeldung. Es gibt keine Tastaturüberwachung und keine Umgehung der Serverauthentifizierung.
 
-**[Fertige Mod herunterladen](https://github.com/cuinhellcat/ValheimContinue/releases/latest)** · **[Windows-Anleitung](docs/INSTALL-WINDOWS.md)**
+## Du möchtest die Mod installieren?
 
-## Windows: kurze Installation
+**[Hier geht es zur Windows-Anleitung – Schritt für Schritt](docs/INSTALL-WINDOWS.md)**
 
-1. Valheim beenden. Falls vorhanden, die bestehende Mod-Konfiguration sichern.
-2. [BepInExPack_Valheim](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/) installieren. Empfohlener Stand für Valheim 1.0.17: **5.4.2351**. Bei manueller Installation den **Inhalt** von `BepInExPack_Valheim` neben `valheim.exe` kopieren. Einen bereits passenden Mod-Lader nicht überschreiben.
-3. `ValheimContinue-1.0.0.zip` vom GitHub-Release herunterladen. Die darin enthaltene `BepInEx`-Struktur in den Valheim-Ordner kopieren; die DLL landet unter `BepInEx/plugins/ValheimContinue/ValheimContinue.dll`.
-4. Valheim wie gewohnt über Steam starten. Im Hauptmenü **...** anklicken, Figur auswählen und Server/Port eintragen. Optional ein Passwort eingeben und **Speichern** drücken.
-5. **continue** drücken.
+Du brauchst kein GitHub-Konto und keine Programmierkenntnisse. GitHub ist hier einfach die Webseite, auf der die Mod und diese Anleitung liegen. Die Dateienliste oben auf dieser Seite kannst du überspringen.
 
-Es werden keine Fenstergröße, Vollbildoption, Steuerung oder Steam-Input-Einstellungen durch die Mod verändert. Bei Nutzung eines Mod-Managers das Spiel über dessen normalen Steam-Startweg starten.
+Die Anleitung zeigt dir:
+
+1. Welche **zwei ZIP-Dateien** du herunterladen musst. ZIP-Dateien sind verpackte Ordner, die Windows für dich auspackt.
+2. Wie du mit Steam deinen Valheim-Ordner findest.
+3. Welche Ordner du dorthin kopierst.
+4. Wo du im Spiel deine Figur und deine eigenen Serverdaten einträgst.
+
+**[Continue-ZIP direkt herunterladen](https://github.com/cuinhellcat/ValheimContinue/releases/download/v1.0.0/ValheimContinue-1.0.0.zip)**
+
+Dieser Link lädt die fertige Mod herunter. Zusätzlich brauchst du das kleine Hilfsprogramm BepInEx; der passende Download steht in der Windows-Anleitung. Die Mod wurde unter Linux erfolgreich getestet. Ein Test auf einem Windows-Rechner steht noch aus.
+
+Die Mod verändert weder Fenstergröße noch Vollbildoption oder Steuerung. Starte Valheim nach der Installation wie gewohnt über Steam.
 
 ## Einstellungen
 
